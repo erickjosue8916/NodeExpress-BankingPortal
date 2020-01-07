@@ -3,7 +3,7 @@ const path = require('path');
 
 describe('`accounts.js` exports', () => {
   it('`accounts.js` should export router @routes-accounts-js-export-router', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     assert(fs.existsSync(path.join(process.cwd(), 'src/routes/accounts.js')), 'The `src/routes/accounts.js` file does not exist.');
     let localRouter;
 

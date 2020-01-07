@@ -11,7 +11,7 @@ describe('writeJSON function', () => {
   });
 
   it('`writeJSON()` should write to `accounts.json` @data-js-write-json-function-body', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     assert(fs.existsSync(path.join(process.cwd(), 'src/data.js')), 'The `src/data.js` file does not exist.');
     let writeJSON;
     try {

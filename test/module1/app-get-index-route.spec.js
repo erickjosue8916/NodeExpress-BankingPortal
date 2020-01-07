@@ -16,7 +16,7 @@ describe('Default Route', () => {
   });
 
   it('should contain the index route @app-get-index-route', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     const req = mockReq();
     const res = mockRes();
 

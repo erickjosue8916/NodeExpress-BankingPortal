@@ -5,7 +5,7 @@ const R = require('ramda');
 
 describe('Read user data', () => {
   it('should read user data @app-read-user-data', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     let users;
     let userData;
     try {

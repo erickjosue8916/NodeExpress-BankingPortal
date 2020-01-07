@@ -99,7 +99,7 @@ Object.assign(global, {
   request,
   sinon,
   appModule,
-  app,
+  router: app,
   routeStack,
   mockReq,
   mockRes

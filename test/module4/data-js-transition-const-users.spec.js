@@ -3,7 +3,7 @@ const rewire = require('rewire');
 
 describe('Read user data from `data.js`', () => {
   it('`data.js` should read user data @data-js-transition-const-users', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     let users;
     let userData;
     try {

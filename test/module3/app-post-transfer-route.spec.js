@@ -11,7 +11,7 @@ describe('Transfer post route', () => {
   });
 
   it('should contain the post transfer route @app-post-transfer-route', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     const request = { body: { from: 'savings', to: 'checking', amount: 100 } };
     const req = mockReq(request);
     const res = mockRes();

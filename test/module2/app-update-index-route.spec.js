@@ -3,18 +3,18 @@ const R = require('ramda');
 describe('Updated Index Route', () => {
   let spy;
   before(() => {
-    if (typeof app === 'undefined') {
+    if (typeof router === 'undefined') {
       spy = {
         restore: () => { }
       };
     } else {
-      spy = sinon.spy(app, 'render');
+      spy = sinon.spy(router, 'render');
     }
   });
 
   it('should contain the index route with accounts @app-update-index-route', done => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
-    request(app)
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
+    request(router)
       .get('/')
       .expect(() => {
         assert(spy.called, 'The index route may have not been created.');

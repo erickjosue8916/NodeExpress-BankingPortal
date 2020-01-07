@@ -5,7 +5,7 @@ const rewire = require('rewire');
 
 describe('Move account routes', () => {
   it('`accounts.js` should contain routes @routes-accounts-js-move-routes', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     assert(fs.existsSync(path.join(process.cwd(), 'src/routes/accounts.js')), 'The `src/routes/accounts.js` file does not exist.');
     let express;
     let router;

@@ -1,6 +1,6 @@
 describe('Require accounts routes', () => {
   it('require express and create app const @app-require-account-routes', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     let accountRoutes;
     try {
       accountRoutes = appModule.__get__('accountRoutes');

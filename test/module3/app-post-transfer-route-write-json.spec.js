@@ -19,7 +19,7 @@ describe('Transfer post route write JSON', () => {
   });
 
   it('should contain the index route @app-post-transfer-route-write-json', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     const request = {
       body: {
         from: 'savings',

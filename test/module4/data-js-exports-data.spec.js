@@ -3,7 +3,7 @@ const path = require('path');
 
 describe('`data.js` exports', () => {
   it('`data.js` should export an object @data-js-exports-data', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     assert(fs.existsSync(path.join(process.cwd(), 'src/data.js')), 'The `src/data.js` file does not exist.');
     let localAccounts;
     let localUsers;

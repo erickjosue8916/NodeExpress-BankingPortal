@@ -27,7 +27,7 @@ describe('Payment Feature', () => {
   });
 
   it('should contain payment feature @app-payment-feature', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
 
     assert(typeof getHandleSpy === 'function', 'The payment get route may not exist.');
     const getReq = mockReq({});

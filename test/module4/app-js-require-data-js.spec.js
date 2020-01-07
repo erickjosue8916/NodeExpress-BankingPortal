@@ -1,6 +1,6 @@
 describe('Require `data.js` in `app.js', () => {
   it('should require `data.js` @app-js-require-data-js', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     let accountData;
     let userData;
     let users;

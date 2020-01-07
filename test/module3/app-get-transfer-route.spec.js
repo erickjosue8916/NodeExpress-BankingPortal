@@ -14,7 +14,7 @@ describe('Transfer get route', () => {
   });
 
   it('should contain the get transfer route @app-get-transfer-route', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     const req = mockReq();
     const res = mockRes();
     assert(typeof handleSpy === 'function', 'The transfer get route may not exist yet.');

@@ -18,7 +18,7 @@ describe('Transfer post route redirect', () => {
   });
 
   it('should contain the transfer route @app-post-transfer-route-redirect', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     const request = {
       body: {
         from: 'savings',

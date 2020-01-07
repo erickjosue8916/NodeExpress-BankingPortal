@@ -3,7 +3,7 @@ const rewire = require('rewire');
 
 describe('Read account data from `data.js`', () => {
   it('should read account data @data-js-transition-const-accounts', () => {
-    assert(typeof app === 'function', '`app` const has not been created in `app.js`.');
+    assert(typeof router === 'function', '`app` const has not been created in `app.js`.');
     let accounts;
     let accountData;
     try {
