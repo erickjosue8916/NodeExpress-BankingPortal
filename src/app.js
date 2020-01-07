@@ -1,11 +1,12 @@
-const fs = require('fs');
 const path = require('path')
 const express = require('express')
 
-const { accounts, users, writeJSON } = require('./data')
+const { accounts, users } = require('./data')
 const accountRoutes = require('./routes/accounts')
 const servicesRoutes = require('./routes/services')
 const app = express()
+
+const port  = process.env.PORT || 3000
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
@@ -28,4 +29,4 @@ app.get('/profile', (req, res) => {
 })
 
 
-app.listen(4000, () => console.log('PS Proyect Running on port 3000!'));
+app.listen(port, () => console.log(`PS Proyect Running on port ${port}!`));
